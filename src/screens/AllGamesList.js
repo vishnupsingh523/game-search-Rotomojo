@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react'
 import { getGameList } from '../services/GameListService';
+import GameScreen from './GameScreen';
 
 const AllGamesList = () => {
     const [gameList, setGameList] = useState([]);
@@ -22,6 +23,13 @@ const AllGamesList = () => {
     return (
         <div>
             <h1>List of Games...</h1>
+
+            {
+                gameList.map((game, index) => {
+                    if(index!==0)
+                    return <GameScreen key={index} game={game} />
+                })
+            }
         </div>
   )
 }
