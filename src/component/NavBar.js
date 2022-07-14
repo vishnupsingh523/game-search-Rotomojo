@@ -1,14 +1,13 @@
 import React from "react";
-import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
+import {Link } from "react-router-dom";
 import AllGamesList from "../screens/AllGamesList";
 import "../css/NavBar.css";
 
 const NavBar = () => {
   return (
     <>
-      <BrowserRouter>
         <header>
-          <img src="" alt="GAME-LOGO" />
+          <Link to='/'><img className="logo" src="images/game-logo.jpg" alt="GAME-LOGO" /></Link>
           <div className="nav-links">
             <li>
               <Link className="link" to="/allGames">
@@ -22,12 +21,9 @@ const NavBar = () => {
               </Link>
             </li>
           </div>
-        </header>
 
-        <Routes>
-          <Route path="/allGames" element={<AllGamesList />} />
-        </Routes>
-      </BrowserRouter>
+          <Link className="creator" to="/creator"><button>Creator</button></Link>
+        </header>
     </>
   );
 };
