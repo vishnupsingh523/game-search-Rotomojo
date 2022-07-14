@@ -1,10 +1,12 @@
 import './App.css';
-import AllGamesList from './screens/AllGamesList';
+// import AllGamesList from './screens/AllGamesList';
+import NavBar from './component/NavBar';
 
 function App() {
   return (
     <div className="App">
-      <AllGamesList />
+      <NavBar />
+      {/* <AllGamesList /> */}
     </div>
   );
 }

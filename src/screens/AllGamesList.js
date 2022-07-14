@@ -7,7 +7,7 @@ const AllGamesList = () => {
 
     useEffect(() => {
         getGameList().then(({data}) => {
-            console.log({data});
+            // console.log({data});
             setGameList(data);
         })
     }, [])
@@ -22,14 +22,15 @@ const AllGamesList = () => {
 
     return (
         <div>
-            <h1>List of Games...</h1>
-
-            {
-                gameList.map((game, index) => {
-                    if(index!==0)
-                    return <GameScreen key={index} game={game} />
-                })
-            }
+            <h1>List of All Games</h1>
+            <div className='game-list'>
+                {
+                    gameList.map((game, index) => {
+                        if(index!==0)
+                        return <GameScreen key={index} game={game} />
+                    })
+                }
+            </div>
         </div>
   )
 }
