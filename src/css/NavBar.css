@@ -5,10 +5,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: #24252A;
 }
 
 header{
+    
+    background: #24252A;
     display: flex;
     justify-content: space-between;
     align-items: center;
