@@ -25,6 +25,7 @@ const AllGamesList = () => {
             <h1>List of All Games</h1>
             <div className='game-list'>
                 {
+                    
                     gameList.map((game, index) => {
                         if(index!==0)
                         return <GameScreen key={index} game={game} />

@@ -2,47 +2,39 @@ import { useState, useEffect } from "react";
 import { getGameList } from "../services/GameListService";
 
 const PlatformScreen = () => {
-  const [gameList, setGameList] = useState([]);
-  //   const [newGameList, setNewGameList] = useState([]);
+	const [gameList, setGameList] = useState([]);
+	// using useEffect to get the data array from the API.
+	useEffect(() => {
+		getGameList()
+			.then(({ data }) => {
+				// console.log(data);
+				setGameList(data);
+			})
+			.catch((e) => console.error(e));
+	}, []);
 
-  let count = 0;
-  let newGameList = [];
-  // uusing useEffect to get the data array from the API.
-  useEffect(() => {
-    getGameList()
-      .then(({ data }) => {
-        setGameList(data);
-      })
-      .catch((e) => console.error(e));
+	const newGameList = [
+		...new Set(
+			gameList
+				.filter((game, index) => {
+					if (index !== 0) return game;
+				})
+				.map((game, index) => {
+					return game.platform;
+				})
+		),
+	];
 
-    setTimeout(() => {
-      
-    newGameList = gameList.filter((game) => {
-      if (count === 0) {
-        count++;
-        return ;
-      } else return game;
-    }, 3000)
-	});
-	  
-    
 
-    //   console.log(gameList)
-  }, []);
+	if (!gameList.length) return <h1>Loading ... </h1>;
 
-  if (!newGameList.length) return <h1>Loading ... </h1>;
-
-  return (
-    <div>
-      {
-        //   newGameList.sort((game1, game2) => {
-
-        // 		return  game1.platform - game2.platform;
-        //   })
-        console.log(newGameList)
-      }
-    </div>
-  );
+	return (
+		<div>
+			{newGameList.map((game, index) => {
+				return <p key={index}>{game}</p>;
+			})}
+		</div>
+	);
 };
 
 export default PlatformScreen;

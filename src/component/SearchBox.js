@@ -25,10 +25,11 @@ const Input = styled.input`
 	}
 `
 
-const SearchBox = () => {
+
+const SearchBox = ({handleInputChange}) => {
   return (
 	<Container>
-		<Input placeholder='Type keywords' />
+		<Input onChange={(event)=> handleInputChange(event.target.value)} placeholder='Type keywords' />
 	</Container>
   )
 }

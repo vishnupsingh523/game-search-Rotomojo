@@ -17,7 +17,7 @@ const NavBar = () => {
 
             <li>
               <Link className="link" to="/platform">
-                Platform
+                Platforms
               </Link>
             </li>
           </div>
