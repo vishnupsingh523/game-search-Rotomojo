@@ -1,16 +1,3 @@
 .App {
   text-align: center;
 }
-
-/* Game Screen */
-.game-screen{
-  padding: 10px;
-  margin: 20px;
-  background-color: rgb(138, 138, 138);
-  border-radius: 20px;
-}
-/* Game List */
-.game-list{
-  display: grid;
-  grid-template-columns: auto auto;
-}

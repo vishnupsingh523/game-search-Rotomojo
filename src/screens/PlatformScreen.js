@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { getGameList } from "../services/GameListService";
+import "../css/Platform.css";
 
 const PlatformScreen = () => {
 	const [gameList, setGameList] = useState([]);
@@ -25,14 +26,23 @@ const PlatformScreen = () => {
 		),
 	];
 
-
 	if (!gameList.length) return <h1>Loading ... </h1>;
 
 	return (
-		<div>
-			{newGameList.map((game, index) => {
-				return <p key={index}>{game}</p>;
-			})}
+		<div className="platform-screen">
+			<h1 className="platform-heading font-effect-shadow-multiple">
+				List of All Platforms
+			</h1>
+			<div className="platform-content">
+				{
+					newGameList.map((game, index) => {
+					return (
+						<p className="platform-card" key={index}>
+							{game}
+						</p>
+					);
+				})}
+			</div>
 		</div>
 	);
 };

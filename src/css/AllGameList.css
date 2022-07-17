@@ -1,0 +1,26 @@
+.main-game{
+	background-color: rgba(250, 250, 130, 0.323);
+}
+.heading{
+	font-size: 50px;
+	text-align: center;
+	padding: 30px;
+
+}
+
+.game-list{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	/* width: 280px; */
+	margin: 0px 50px;
+}
+
+.gameScreen{
+	padding: 10px 20px;
+	margin:5px;
+	background-color: rgba(53, 88, 19, 0.575);
+	border: none;
+	border-radius: 20px;
+	text-align: justify;
+	font-family: 'QuickSand';
+}

@@ -11,7 +11,7 @@ const NavBar = () => {
           <div className="nav-links">
             <li>
               <Link className="link" to="/allGames">
-                All Games
+                Search
               </Link>
             </li>
 

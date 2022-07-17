@@ -1,4 +1,5 @@
-import {useState, useEffect} from 'react'
+import '../css/AllGameList.css';
+import { useState, useEffect } from 'react'
 import { getGameList } from '../services/GameListService';
 import GameScreen from './GameScreen';
 
@@ -21,8 +22,8 @@ const AllGamesList = () => {
     }
 
     return (
-        <div>
-            <h1>List of All Games</h1>
+        <div className='main-game'>
+            <h1 className='heading font-effect-shadow-multiple'>List of All Games</h1>
             <div className='game-list'>
                 {
                     

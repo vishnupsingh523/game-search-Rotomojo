@@ -13,8 +13,8 @@ function App() {
 				<NavBar />
 
 				<Routes>
-					<Route path="/" element={<Search />} />
-					<Route path="/allGames" element={<AllGamesList />} />
+					<Route path="/" element={<AllGamesList />} />
+					<Route path="/allGames" element={<Search />} />
 					<Route path="/platform" element={<PlatformScreen />} />
 				</Routes>
 			</BrowserRouter>

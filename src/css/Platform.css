@@ -1,0 +1,36 @@
+.platform-screen{
+	background: url("https://c.wallhere.com/photos/fa/2d/3840x2160_px_assassins_creed_Assassins_Creed_Syndicate_video_games-1066439.jpg!d");
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 40px;
+}
+
+.platform-heading{
+	font-size: 50px;
+	font-family: 'QuickSand', sans-serif;
+	margin-bottom: 20px;
+	margin-top: 30px;
+	background-color: rgba(70, 70, 69, 0.525);
+	padding: 10px 20px;
+	border-radius: 20px;
+
+}
+
+.platform-content{
+	/* display:grid;
+	grid-template-columns: auto auto;
+	justify-content: space-evenly; */
+}
+.platform-card{
+	font-size: 25px;
+	font-weight: 900;
+	font-family: 'QuickSand', sans-serif;
+	padding: 10px;
+	border: 2px solid rgb(34, 164, 1);
+	background-color: rgba(154, 240, 157, 0.584);
+	border-radius: 15px;
+	margin-bottom: 10px;
+	text-align: center;
+}
