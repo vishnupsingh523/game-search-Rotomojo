@@ -7,8 +7,8 @@ const Container = styled.div`
 	margin:10px;
 `
 const Input = styled.input`
-	padding: 8px 15px;
-	font-size: 15px;
+	padding: 15px 20px;
+	font-size: 20px;
 	width: 250px;
 	border-width: 0;
 	background: #a592f2;

@@ -6,6 +6,7 @@ import SearchBox from "./SearchBox";
 const Body = styled.div`
 	background-color: #0f1228;
 	overflow-x: hidden;
+	height:83.5vh;
 	color: #e7e9f0;
 	font-family: "QuickSand", sans-serif;
 `;
@@ -16,7 +17,7 @@ const HeadContainer = styled.div`
 	margin-top: 60px;
 `;
 const HeadText = styled.h1`
-	font-family: "QuickSand", cursive;
+	font-family: "Lato", cursive;
 	font-size: 50px;
 	margin: 5px 0px 5px 0px;
 `;

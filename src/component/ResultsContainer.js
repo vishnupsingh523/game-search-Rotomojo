@@ -1,5 +1,6 @@
 import {useEffect, useState} from "react";
 import { getGameList } from "../services/GameListService";
+import '../css/results.css';
 
 const ResultsContainer = ({inputText}) => {
 	const [gameList, setGameList] = useState([]);
@@ -20,10 +21,6 @@ const ResultsContainer = ({inputText}) => {
 			return game;
 		});
 	
-	const makeLowerCase=(value) =>{
-		return value.toString().toLowerCase();
-	}
-	
 
 	return (
 		<div>
@@ -35,7 +32,7 @@ const ResultsContainer = ({inputText}) => {
 						return game;
 					}
 				}).map((game, index) => {
-					return <p key={index}>{game.title}</p>
+					return <p className="result-title" key={index}>{game.title}</p>
 				})
 			}
 		</div>);
