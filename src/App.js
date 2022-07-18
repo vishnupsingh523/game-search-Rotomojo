@@ -13,9 +13,9 @@ function App() {
 				<NavBar />
 
 				<Routes>
-					<Route path="/" element={<AllGamesList />} />
-					<Route path="/allGames" element={<Search />} />
-					<Route path="/platform" element={<PlatformScreen />} />
+					<Route path="/game-search-Rotomojo/allGames" element={<AllGamesList />} />
+					<Route path="/game-search-Rotomojo/Search" element={<Search />} />
+					<Route path="/game-search-Rotomojo/platform" element={<PlatformScreen />} />
 				</Routes>
 			</BrowserRouter>
 		</>

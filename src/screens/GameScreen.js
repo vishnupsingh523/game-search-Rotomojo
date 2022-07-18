@@ -5,7 +5,7 @@ import '../css/AllGameList.css';
 const GameScreen = ({ game: { title, platform, score,genre, editors_choice } }) => {
 	return (
 		<div className="gameScreen">
-			<h2>Title: {title}</h2>
+			<h2>{title}</h2>
 			<h3>Platform: {platform}</h3>
 			<h4>Score: {score}</h4>
 			<h4>Genre: {genre}</h4>
