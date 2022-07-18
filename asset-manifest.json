@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/game-search-Rotomojo/static/css/main.8bcd5eee.css",
-    "main.js": "/game-search-Rotomojo/static/js/main.a2744c64.js",
+    "main.css": "/game-search-Rotomojo/static/css/main.372a98c7.css",
+    "main.js": "/game-search-Rotomojo/static/js/main.7b05924e.js",
     "static/js/787.6a541d2d.chunk.js": "/game-search-Rotomojo/static/js/787.6a541d2d.chunk.js",
     "index.html": "/game-search-Rotomojo/index.html",
-    "main.8bcd5eee.css.map": "/game-search-Rotomojo/static/css/main.8bcd5eee.css.map",
-    "main.a2744c64.js.map": "/game-search-Rotomojo/static/js/main.a2744c64.js.map",
+    "main.372a98c7.css.map": "/game-search-Rotomojo/static/css/main.372a98c7.css.map",
+    "main.7b05924e.js.map": "/game-search-Rotomojo/static/js/main.7b05924e.js.map",
     "787.6a541d2d.chunk.js.map": "/game-search-Rotomojo/static/js/787.6a541d2d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8bcd5eee.css",
-    "static/js/main.a2744c64.js"
+    "static/css/main.372a98c7.css",
+    "static/js/main.7b05924e.js"
   ]
 }
