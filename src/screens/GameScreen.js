@@ -6,7 +6,7 @@ const GameScreen = ({ game: { title, platform, score,genre, editors_choice } }) 
 	return (
 		<div className="gameScreen">
 			<h2>{title}</h2>
-			<h3>Platform: {platform}</h3>
+			<h3> {platform}</h3>
 			<h4>Score: {score}</h4>
 			<h4>Genre: {genre}</h4>
 			<h4>Editors Choice: {editors_choice}</h4>

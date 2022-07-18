@@ -7,7 +7,7 @@ const NavBar = () => {
 	return (
 		<>
 			<header>
-				<Link to="/">
+				<Link to="/game-search-Rotomojo/allGames">
 					<img className="logo" src="images/game-logo.jpg" alt="GAME-LOGO" />
 				</Link>
 				<div className="nav-links">
@@ -29,7 +29,7 @@ const NavBar = () => {
 					</li>
 				</div>
 
-				<Link className="creator" to="/creator">
+				<Link className="creator" to="/game-search-Rotomojo/creator">
 					<button>Creator</button>
 				</Link>
 			</header>

@@ -26,9 +26,15 @@ const AllGamesList = () => {
             <h1 className='heading font-effect-shadow-multiple'>List of All Games</h1>
             <div className='game-list'>
                 {
+                    // sort function
+                    // sort((game1, game2) => {
+                    //     return (game1.platform > game2.platform ? 1 : -1);
+                    // }).
                     
-                    gameList.map((game, index) => {
-                        if(index!==0)
+                    gameList.filter((game, index) => {
+                        if (index !== 0)
+                            return game;
+                    }).map((game, index) => {
                         return <GameScreen key={index} game={game} />
                     })
                 }

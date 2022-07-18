@@ -13,6 +13,7 @@ function App() {
 				<NavBar />
 
 				<Routes>
+					<Route path="/game-search-Rotomojo/" element={<AllGamesList />} />
 					<Route path="/game-search-Rotomojo/allGames" element={<AllGamesList />} />
 					<Route path="/game-search-Rotomojo/Search" element={<Search />} />
 					<Route path="/game-search-Rotomojo/platform" element={<PlatformScreen />} />
