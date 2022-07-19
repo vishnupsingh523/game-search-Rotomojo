@@ -27,6 +27,11 @@ const NavBar = () => {
 							Platforms
 						</Link>
 					</li>
+					<li>
+						<Link className="link" to="/game-search-Rotomojo/sort">
+							Sorted List
+						</Link>
+					</li>
 				</div>
 
 				<Link className="creator" to="/game-search-Rotomojo/creator">

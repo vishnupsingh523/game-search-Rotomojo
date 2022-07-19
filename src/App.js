@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PlatformScreen from "./screens/PlatformScreen";
 // import Home from "./screens/Home";
 import Search from "./component/Search";
+import Sort from "./screens/Sort";
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 					<Route path="/game-search-Rotomojo/allGames" element={<AllGamesList />} />
 					<Route path="/game-search-Rotomojo/Search" element={<Search />} />
 					<Route path="/game-search-Rotomojo/platform" element={<PlatformScreen />} />
+					<Route path="/game-search-Rotomojo/sort" element={<Sort />} />
 				</Routes>
 			</BrowserRouter>
 		</>
